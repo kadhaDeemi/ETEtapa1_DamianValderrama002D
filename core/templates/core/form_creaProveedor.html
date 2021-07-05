@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%csrf_token%}
+    <div class="form-group">
+        {{proveedor_form.numIdentificacion.label}}
+        {{proveedor_form.numIdentificacion}}
+    </div>
+    <div class="form-group">
+        {{proveedor_form.foto.label}}
+        {{proveedor_form.foto}}
+    </div>
+    
+    <div class="form-group">
+        {{proveedor_form.nomCompleto.label}}
+        {{proveedor_form.nomCompleto}}
+    </div>
+    
+    <div class="form-group">
+
+        {{proveedor_form.telefono.label}}
+        {{proveedor_form.telefono}}
+        
+    </div>
+    <div class="form-group">
+
+        {{proveedor_form.direccion.label}}
+        {{proveedor_form.direccion}}
+        
+    </div>
+    <div class="form-group">
+
+        {{proveedor_form.email.label}}
+        {{proveedor_form.email}}
+        
+    </div>
+    <div class="form-group">
+
+        {{proveedor_form.pais.label}}
+        {{proveedor_form.pais}}
+        
+    </div>
+    <div class="form-group" >
+    
+        {{proveedor_form.contraseña.label}}
+        {{proveedor_form.contraseña}}
+        
+    </div>
+    <div class="form-group">
+
+        {{proveedor_form.moneda.label}}
+        {{proveedor_form.moneda}}
+        
+    </div>
+</body>
+</html>
