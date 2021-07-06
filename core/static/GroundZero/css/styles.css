@@ -46,7 +46,7 @@ body {
 .menu li{
     display: inline-block;
     text-align: center;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 img{
@@ -96,4 +96,202 @@ figure{
     position: sticky;
     z-index: 1000;
     top: 0;
+}
+
+.contenedorTodoMASC{  
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative; 
+    margin-top: 110px;
+}
+
+
+.cajaTraseraMASC{   
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,1, 0.9)
+}
+
+.cajaTraseraMASC div{   
+    margin: 100px 40px;
+    color: white;
+    margin-left: 350px;
+}
+
+
+.cajaTraseraMASC div p{    
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.cajaTraseraLoginMASC {
+    text-align: center;
+}
+
+
+.cajaTraseraMASC div h3{    
+    font-weight: 400;
+    font-size: 26px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.Contenedor-RegisterMASC{   
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.Contenedor-RegisterMASC form{  
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.Contenedor-RegisterMASC form h2{    
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000100;
+}
+
+.Contenedor-RegisterMASC form input{ 
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px ;
+    outline: none;
+}
+.Contenedor-RegisterMASC form button{    
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Contenedor-Login-RegisterMASC{   
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -195px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.Contenedor-Login-RegisterMASC form{  
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.Contenedor-Login-RegisterMASC form h3{    
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000100;
+}
+@media screen and (max-width: 850px){
+    .menu li{
+        display: inline-block;
+        text-align: center;
+        margin-left: 70px;
+    }
+    .Contenedor-RegisterMASC{   
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    
+    .Contenedor-RegisterMASC form{  
+        position: relative;
+    }
+    .cajaTraseraMASC{   
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .cajaTraseraMASC div{   
+        margin: 0px;
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.ContenedorVer{  
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ContenedorVer h3{ 
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+    margin-left: 30px;
+}
+
+thead{  
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+ tbody{
+    background-color: #f2f2f2;
+}
+
+td{
+    color: #fff;
+    font-weight: 600;
+}
+.modi{
+    color: green;
+    outline: none;
+    transition: 400 ms;
+    text-decoration: none;
+}
+
+.modi:hover{    
+    color: darkgreen;
+    outline: none;
+    text-decoration: none;
+}
+
+.eli{
+    color: red;
+    outline: none;
+    transition: 400 ms;
+    text-decoration: none;
+}
+
+.eli:hover{    
+    color: darkred;
+    outline: none;
+    text-decoration: none;
 }

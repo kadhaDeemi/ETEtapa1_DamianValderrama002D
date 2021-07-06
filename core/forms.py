@@ -28,7 +28,7 @@ class proveedorForm(ModelForm):
             'foto': forms.ClearableFileInput(
                 attrs={
                     'class': 'form-control',
-                    'placeholder':'Foto',
+                    'placeholder':'foto',
                     'id': 'foto'
                 }
             ),

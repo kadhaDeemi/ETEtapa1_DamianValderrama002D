@@ -3,12 +3,45 @@
 <head>
     {%load static%}
     <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'GroundZero/images/logo1.png' %}"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'GroundZero/css/styles.css ' %}">
+    <link href="{% static 'GroundZero/css/styles.css ' %}" type="text/css" rel="stylesheet">
+    <title>Ground Zero</title>
 </head>
 <body>
+    <br>
+    <br>
+    <a href="{% url 'home' %}">
+        <img  src ="{% static 'GroundZero/images/logo.png' %}" width="350px"  height= "85" ></a>
+        <br>
+    <br>
+    <br>
+  <nav class="menu-fixed">
+   <ul class="menu ">
+    <br>
+    <li><a href="{% url 'home' %}" class="btns">Inicio</a></li>
+    <li><a href="#" class="btns">Galeria</a></li>
+    <li><a href="#" class="btns">Nosotros</a></li>
+    <li><a href="{% url 'crear' %}" class="btns">Proveedor</a></li>
+    <li><a href="{% url 'ver' %}" class="btns">Listado</a></li>
+    <br><br>
+   </ul></nav> 
+   <br><br><br><br><br><br><br><br><br><br><br>
+   <div class="contenedorTodoMASC">
+    <div class="cajaTraseraMASC">
+        <div class="cajaTraseraLogin">
+        <h3>Registrar Proveedor</h3>
+        <p>Ingrese los datos para poder registrarse</p>
+        
+    </div>
+</div>
+<div class="Contenedor-Login-RegisterMASC">
+    <form method="POST" id="Formulario" class=" Formulario-RegisterMASC" enctype="multipart/form-data">
     {%csrf_token%}
+    <h3>Registro Proveedor</h3>
     <div class="form-group">
         {{proveedor_form.numIdentificacion.label}}
         {{proveedor_form.numIdentificacion}}
@@ -59,5 +92,43 @@
         {{proveedor_form.moneda}}
         
     </div>
+    <div class="form-group">
+        <input href="{% url 'home'%}" type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+        <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+    </div>
+    </form>
+   </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+   <div class="container">
+    <div class="row">
+        <div class="col-xl-4 fondo" >
+          <h5>Veterinaria </h5> 
+          <ul><li>Nosotros</li>
+            <li>Galeria</li>
+            <li>Proveedores</li>
+          </ul>
+        </div>
+        <div class="col-xl-4 fondo">
+          <h5>Casa matriz</h5> 
+          <div class ="tamaño2 "><p>Dirección: <br>Av. Pajaritos 1343</p>
+          <p>Telefono: <br> (+56) 2 3242 5537 </p>
+          <p>Email: <br>GroundZero@Gmail.com</p>
+            </div>
+        </div>
+        <div class="col-xl-4 fondo " >
+          <h5>Sucursal</h5> 
+          <div class ="tamaño2 "><p>Dirección: <br>Mar de drake 7211 - Local 2</p>
+          <p>Telefono: <br> (+56) 2 4672 2132 </p>
+          <p>Email: <br>GroundZer0@gmail.cl</p>
+          <p>Atención de 10 a 20hrs</p></div>
+          <h5 class="copy">«Copyright 2021 por Ground Zero Chile ©»</h5>
+          <figure><img src="{% static 'GroundZero/images/iconfb.png' %}" width="13px" height="13px"></figure>
+          <figure><img src="{% static 'GroundZero/images/iconig.png' %}" width="13px" height="13px"></figure>
+          <figure><img src="{% static 'GroundZero/images/icontwitter.png' %}" width="13px" height="13px"></figure>
+        </div>
+      </div>
+</div>
 </body>
 </html>

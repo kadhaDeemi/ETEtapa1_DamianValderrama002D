@@ -10,8 +10,8 @@ class Moneda(models.Model):
         return(self.nomMoneda)
 
 class Proveedor(models.Model):
-    numIdentificacion=models.IntegerField(primary_key=True, max_length=20, verbose_name='Numero de identificacion')
-    foto=models.FileField(null=True, blank=True)
+    numIdentificacion=models.IntegerField(primary_key=True, verbose_name='Numero de identificacion')
+    foto=models.ImageField(null=True, blank=True, upload_to='imagen/')
     nomCompleto=models.CharField(max_length=100, verbose_name='Nombre proveedor')
     telefono=models.IntegerField(verbose_name='Numero de telefono')
     direccion=models.CharField(max_length=100, verbose_name='Direccion proveedor')
