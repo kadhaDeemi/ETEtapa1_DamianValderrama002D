@@ -12,6 +12,43 @@
     <title>Ground Zero</title>
 </head>
 <body>
-    
+    <br>
+    <br>
+    <a href="{% url 'home' %}">
+        <img  src ="{% static 'GroundZero/images/logo.png' %}" width="350px"  height= "85" ></a>
+        <br>
+    <br>
+    <br>
+  <nav class="menu-fixed">
+   <ul class="menu ">
+    <br>
+    <li><a href="{% url 'home' %}" class="btns">Inicio</a></li>
+    <li><a href="#" class="btns">Galeria</a></li>
+    <li><a href="#" class="btns">Nosotros</a></li>
+    <li><a href="{% url 'crear' %}" class="btns">Proveedor</a></li>
+    <li><a href="{% url 'ver' %}" class="btns">Listado</a></li>
+    <br><br>
+   </ul></nav>
+   <br><br> <br><br> <br><br> <br><br> <br><br>
+    <div class="contenedorTodoMASC">
+        <div class="cajaTraseraMASC">
+            <div class="cajaTraseraLogin">
+            <h3>Modificar Mascota</h3>
+            <p>Aqui podra modificar la mascota ingresada para arreglar problemas :D</p>
+            
+        </div>
+    </div>
+  
+        <div class="Contenedor-Login-RegisterMASC">
+         <form action="" method="POST" class="Formulario-RegisterMASC"   enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <div class="d-flex justify-content-end">
+                <input type="reset" value="Cancelar" class="btn btn-secondary">
+                <input type="submit" value="Modificar" class="btn btn-primary">
+              </div>
+              </form>
+            </div>
+        </div>
 </body>
 </html>

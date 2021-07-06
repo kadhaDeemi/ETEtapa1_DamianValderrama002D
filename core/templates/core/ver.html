@@ -45,8 +45,8 @@
                     <th>Pais</th>
                     <th>contraseña</th>
                     <th>Tipo Moneda</th>
-                    <th>Eliminar</th>
                     <th>Modificar</th>
+                    <th>Eliminar</th>
                 </tr>
                 {% for ve in usuarios%}
                 <tr>
@@ -63,6 +63,7 @@
                     <td>{{ ve.contraseña}}</td>
                     <td>{{ ve.moneda}}</td>
                     <td><a href="{% url 'Modificar' ve.numIdentificacion %}" class="modi">Modificar</a></td>
+                    <td><a href="{% url 'Eliminar' ve.numIdentificacion %}" class="eli">Eliminar</a></td>
                     {%endfor%}
                 </tr>
             </table>
