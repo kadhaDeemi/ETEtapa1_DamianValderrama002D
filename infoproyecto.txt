@@ -2,6 +2,19 @@
 nombre: admin
 contraseña: 1234
 
+
+para ingresar al admin
 http://127.0.0.1:8000/admin
 
 
+para ingresar a la pagina web
+http://127.0.0.1:8000/
+
+para ingresar a la api
+http://127.0.0.1:8000/lista_api
+
+
+
+creacion bd
+create user c##ETprogweb identified by 1234 table space users quota unlimited on users;
+grant connect, resource to c##ETprogweb
